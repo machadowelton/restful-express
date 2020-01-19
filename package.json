@@ -9,9 +9,24 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "lint-staged": {
+    "*.js": [
+      "standard"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "dependencies": {
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "husky": "^4.0.10",
+    "lint-staged": "^9.5.0",
+    "standard": "^14.3.1"
   }
 }
